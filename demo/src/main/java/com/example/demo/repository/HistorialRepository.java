@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.model.Historial;
 
 @Repository
-public interface HistorialRepository extends JpaRepository<Historial, Long> {
+public interface HistorialRepository extends JpaRepository<Historial, Integer> {
     
 }
