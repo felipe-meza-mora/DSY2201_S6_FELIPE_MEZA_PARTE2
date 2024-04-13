@@ -106,6 +106,7 @@ public class PacienteServiceImpl implements PacienteService{
         if (historialOptional.isPresent()) {
             Historial existingHistorial = historialOptional.get();
             existingHistorial.setFechaAtencion(historial.getFechaAtencion());
+            existingHistorial.setTipo(historial.getTipo());
             existingHistorial.setDescripcion(historial.getDescripcion());
             existingHistorial.setDoctor(historial.getDoctor());
             // Actualizar otros campos según sea necesario

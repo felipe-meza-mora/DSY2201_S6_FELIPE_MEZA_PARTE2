@@ -24,9 +24,9 @@ public class Paciente {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "rut", length = 100)
+    @Column(name = "rut", length = 12)
     @NotNull(message = "El RUT no puede ser nulo")
-    @Size(max = 100, message = "El RUT debe tener como máximo {max} caracteres")
+    @Size(max = 12, message = "El RUT debe tener como máximo {max} caracteres")
     private String rut;
 
     @Column(name = "nombre_completo", length = 100)
